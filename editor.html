@@ -1,0 +1,43 @@
+<div class="editor-container">
+    <header class="editor-header">
+        <div class="logo">TrimIQ</div>
+        <div class="user-controls">
+            <span id="user-balance">Balance: ₹0.00</span>
+            <button id="add-money">Add Money</button>
+            <button id="watch-ads">Watch Ads</button>
+            <span id="total-earnings">Earned: ₹0.00</span>
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="payment-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span id="payment-mode">Pay-as-you-go</span>
+            </div>
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+
+    <div class="split-screen">
+        <div class="left-panel">
+            <h3>Upload Source Video</h3>
+            <div class="upload-area" id="video-upload">
+                <p>Drag & drop video files here</p>
+                <input type="file" accept="video/*" id="video-input">
+            </div>
+            <div class="video-info">
+                <p>Duration: <span id="video-duration">00:00</span></p>
+                <p>Estimated Cost: <span id="estimated-cost">₹0.00</span></p>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <h3>Voice-over or Text Prompt</h3>
+            <textarea id="text-prompt" placeholder="Describe your video or paste script..."></textarea>
+            <div class="upload-area" id="audio-upload">
+                <p>Or drag & drop audio files here</p>
+                <input type="file" accept="audio/*" id="audio-input">
+            </div>
+            <button id="generate-btn" class="gold-gradient">Generate Video</button>
+        </div>
+    </div>
+</div>
